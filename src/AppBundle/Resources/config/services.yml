@@ -1,1 +1,9 @@
+parameters:
+    app.mail_service.class: AppBundle\Service\MailService
+
 services:
+    app.mail_service:
+        class: %app.mail_service.class%
+        arguments:
+            - @mailer
+            - @twig

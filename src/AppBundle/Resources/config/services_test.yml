@@ -1,0 +1,2 @@
+parameters:
+    app.mail_service.class: AppBundle\Tests\Mock\Service\TestMailService
